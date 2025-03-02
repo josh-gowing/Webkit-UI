@@ -3391,37 +3391,13 @@
                 With inline actions and expandable sidebar filters
             </span>
 
+            <!--
             <div class="bg-white">
                 <div>
-                    <!--
-                    Mobile filter dialog
-              
-                    Off-canvas filters for mobile, show/hide based on off-canvas filters state.
-                  -->
                     <div class="relative z-40 lg:hidden" role="dialog" aria-modal="true">
-                        <!--
-                      Off-canvas menu backdrop, show/hide based on off-canvas menu state.
-              
-                      Entering: "transition-opacity ease-linear duration-300"
-                        From: "opacity-0"
-                        To: "opacity-100"
-                      Leaving: "transition-opacity ease-linear duration-300"
-                        From: "opacity-100"
-                        To: "opacity-0"
-                    -->
                         <div class="fixed inset-0 bg-black/25" aria-hidden="true"></div>
 
                         <div class="fixed inset-0 z-40 flex">
-                            <!--
-                        Off-canvas menu, show/hide based on off-canvas menu state.
-              
-                        Entering: "transition ease-in-out duration-300 transform"
-                          From: "translate-x-full"
-                          To: "translate-x-0"
-                        Leaving: "transition ease-in-out duration-300 transform"
-                          From: "translate-x-0"
-                          To: "translate-x-full"
-                      -->
                             <div
                                 class="relative ml-auto flex size-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
                                 <div class="flex items-center justify-between px-4">
@@ -3437,7 +3413,6 @@
                                     </button>
                                 </div>
 
-                                <!-- Filters -->
                                 <form class="mt-4 border-t border-gray-200">
                                     <h3 class="sr-only">Categories</h3>
                                     <ul role="list" class="px-2 py-3 font-medium text-gray-900">
@@ -3460,19 +3435,16 @@
 
                                     <div class="border-t border-gray-200 px-4 py-6">
                                         <h3 class="-mx-2 -my-3 flow-root">
-                                            <!-- Expand/collapse section button -->
                                             <button type="button"
                                                 class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500"
                                                 aria-controls="filter-section-mobile-0" aria-expanded="false">
                                                 <span class="font-medium text-gray-900">Color</span>
                                                 <span class="ml-6 flex items-center">
-                                                    <!-- Expand icon, show/hide based on section open state. -->
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path
                                                             d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
                                                     </svg>
-                                                    <!-- Collapse icon, show/hide based on section open state. -->
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path fill-rule="evenodd"
@@ -3482,7 +3454,7 @@
                                                 </span>
                                             </button>
                                         </h3>
-                                        <!-- Filter section, show/hide based on section state. -->
+                                        
                                         <div class="pt-6" id="filter-section-mobile-0">
                                             <div class="space-y-6">
                                                 <div class="flex gap-3">
@@ -3616,19 +3588,16 @@
                                     </div>
                                     <div class="border-t border-gray-200 px-4 py-6">
                                         <h3 class="-mx-2 -my-3 flow-root">
-                                            <!-- Expand/collapse section button -->
                                             <button type="button"
                                                 class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500"
                                                 aria-controls="filter-section-mobile-1" aria-expanded="false">
                                                 <span class="font-medium text-gray-900">Category</span>
                                                 <span class="ml-6 flex items-center">
-                                                    <!-- Expand icon, show/hide based on section open state. -->
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path
                                                             d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
                                                     </svg>
-                                                    <!-- Collapse icon, show/hide based on section open state. -->
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path fill-rule="evenodd"
@@ -3638,7 +3607,7 @@
                                                 </span>
                                             </button>
                                         </h3>
-                                        <!-- Filter section, show/hide based on section state. -->
+                                    
                                         <div class="pt-6" id="filter-section-mobile-1">
                                             <div class="space-y-6">
                                                 <div class="flex gap-3">
@@ -3751,19 +3720,16 @@
                                     </div>
                                     <div class="border-t border-gray-200 px-4 py-6">
                                         <h3 class="-mx-2 -my-3 flow-root">
-                                            <!-- Expand/collapse section button -->
                                             <button type="button"
                                                 class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500"
                                                 aria-controls="filter-section-mobile-2" aria-expanded="false">
                                                 <span class="font-medium text-gray-900">Size</span>
                                                 <span class="ml-6 flex items-center">
-                                                    <!-- Expand icon, show/hide based on section open state. -->
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path
                                                             d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
                                                     </svg>
-                                                    <!-- Collapse icon, show/hide based on section open state. -->
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path fill-rule="evenodd"
@@ -3773,7 +3739,7 @@
                                                 </span>
                                             </button>
                                         </h3>
-                                        <!-- Filter section, show/hide based on section state. -->
+                                        
                                         <div class="pt-6" id="filter-section-mobile-2">
                                             <div class="space-y-6">
                                                 <div class="flex gap-3">
@@ -3931,25 +3897,12 @@
                                         </button>
                                     </div>
 
-                                    <!--
-                            Dropdown menu, show/hide based on menu state.
-              
-                            Entering: "transition ease-out duration-100"
-                              From: "transform opacity-0 scale-95"
-                              To: "transform opacity-100 scale-100"
-                            Leaving: "transition ease-in duration-75"
-                              From: "transform opacity-100 scale-100"
-                              To: "transform opacity-0 scale-95"
-                          -->
+                                    
                                     <div class="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white ring-1 shadow-2xl ring-black/5 focus:outline-hidden"
                                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                         tabindex="-1">
                                         <div class="py-1" role="none">
-                                            <!--
-                                Active: "bg-gray-100 outline-hidden", Not Active: ""
-              
-                                Selected: "font-medium text-gray-900", Not Selected: "text-gray-500"
-                              -->
+                                            
                                             <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-900"
                                                 role="menuitem" tabindex="-1" id="menu-item-0">Most Popular</a>
                                             <a href="#" class="block px-4 py-2 text-sm text-gray-500" role="menuitem"
@@ -3990,7 +3943,7 @@
                             <h2 id="products-heading" class="sr-only">Products</h2>
 
                             <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
-                                <!-- Filters -->
+                                
                                 <form class="hidden lg:block">
                                     <h3 class="sr-only">Categories</h3>
                                     <ul role="list"
@@ -4014,19 +3967,19 @@
 
                                     <div class="border-b border-gray-200 py-6">
                                         <h3 class="-my-3 flow-root">
-                                            <!-- Expand/collapse section button -->
+                                            
                                             <button type="button"
                                                 class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
                                                 aria-controls="filter-section-0" aria-expanded="false">
                                                 <span class="font-medium text-gray-900">Color</span>
                                                 <span class="ml-6 flex items-center">
-                                                    <!-- Expand icon, show/hide based on section open state. -->
+                                                    
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path
                                                             d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
                                                     </svg>
-                                                    <!-- Collapse icon, show/hide based on section open state. -->
+                                                    
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path fill-rule="evenodd"
@@ -4036,7 +3989,7 @@
                                                 </span>
                                             </button>
                                         </h3>
-                                        <!-- Filter section, show/hide based on section state. -->
+                                        
                                         <div class="pt-6" id="filter-section-0">
                                             <div class="space-y-4">
                                                 <div class="flex gap-3">
@@ -4170,19 +4123,18 @@
                                     </div>
                                     <div class="border-b border-gray-200 py-6">
                                         <h3 class="-my-3 flow-root">
-                                            <!-- Expand/collapse section button -->
                                             <button type="button"
                                                 class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
                                                 aria-controls="filter-section-1" aria-expanded="false">
                                                 <span class="font-medium text-gray-900">Category</span>
                                                 <span class="ml-6 flex items-center">
-                                                    <!-- Expand icon, show/hide based on section open state. -->
+                                                    
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path
                                                             d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
                                                     </svg>
-                                                    <!-- Collapse icon, show/hide based on section open state. -->
+                                                    
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path fill-rule="evenodd"
@@ -4192,7 +4144,7 @@
                                                 </span>
                                             </button>
                                         </h3>
-                                        <!-- Filter section, show/hide based on section state. -->
+                                        
                                         <div class="pt-6" id="filter-section-1">
                                             <div class="space-y-4">
                                                 <div class="flex gap-3">
@@ -4305,19 +4257,17 @@
                                     </div>
                                     <div class="border-b border-gray-200 py-6">
                                         <h3 class="-my-3 flow-root">
-                                            <!-- Expand/collapse section button -->
                                             <button type="button"
                                                 class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
                                                 aria-controls="filter-section-2" aria-expanded="false">
                                                 <span class="font-medium text-gray-900">Size</span>
                                                 <span class="ml-6 flex items-center">
-                                                    <!-- Expand icon, show/hide based on section open state. -->
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path
                                                             d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
                                                     </svg>
-                                                    <!-- Collapse icon, show/hide based on section open state. -->
+                                                    
                                                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor"
                                                         aria-hidden="true" data-slot="icon">
                                                         <path fill-rule="evenodd"
@@ -4327,7 +4277,7 @@
                                                 </span>
                                             </button>
                                         </h3>
-                                        <!-- Filter section, show/hide based on section state. -->
+                                        
                                         <div class="pt-6" id="filter-section-2">
                                             <div class="space-y-4">
                                                 <div class="flex gap-3">
@@ -4455,9 +4405,7 @@
                                     </div>
                                 </form>
 
-                                <!-- Product grid -->
                                 <div class="lg:col-span-3">
-                                    <!-- Your content -->
                                 </div>
                             </div>
                         </section>
@@ -4466,6 +4414,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <section id="product-lists-simple">
         <div class="section bg-white border border-gray-400 shadow-lg ring-1 ring-indigo-500">
